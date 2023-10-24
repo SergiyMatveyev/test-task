@@ -1,0 +1,18 @@
+// Common files
+@import 'scss-reset/reset';
+@import './common.blocks/utilities/variable.scss';
+@import './common.blocks/utilities/mixins.scss';
+@import './common.blocks/common/grid.scss';
+@import './common.blocks/common/typography.scss';
+@import './common.blocks/common/color.scss';
+
+// Theme files
+@import './common.blocks/layout/footer.scss';
+@import './common.blocks/section/section.scss';
+@import './common.blocks/button/button-group.scss';
+@import './common.blocks/button/button.scss';
+@import './common.blocks/banner/banner.scss';
+@import './common.blocks/card/cards-group.scss';
+@import './common.blocks/card/card.scss';
+@import './common.blocks/info-block/info-block.scss';
+@import './common.blocks/why-choose/why-choose.scss';

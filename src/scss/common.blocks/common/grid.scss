@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .container_shifted-right {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+@each $screen-width, $container-width in $containers {
+  @include device($screen-width) {
+    .container {
+      max-width: $container-width;
+    }
+
+    @if $screen-width != 576px {
+      .container_shifted-right {
+        max-width: calc(50vw + #{$container-width} / 2);
+      }
+    }
+  }
+}
